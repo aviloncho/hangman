@@ -34,8 +34,9 @@ class Hangman:
             ('ú', 'u'),
         )
 
+        cleaned_word = self.word
         for a, b in replacements:
-            cleaned_word = self.word.replace(a, b)
+            cleaned_word = cleaned_word.replace(a, b)
 
         self.cleaned_word = cleaned_word
 
